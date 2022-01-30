@@ -25,7 +25,7 @@ git clone https://github.com/sgasimov-dotcom/hello-world-application.git
 
 after you cloned you will need to get into `hello-world/deployments/docker` 
 ```
-cd hello-world/deployments/docker
+cd hello-world-application/deployments/docker
 ```
 
 Docker compose has environment variables configured see below all env 

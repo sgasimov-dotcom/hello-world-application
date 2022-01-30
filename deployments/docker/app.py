@@ -8,8 +8,7 @@ def hello_world():
         'message': 'Hello World!',
         'app-lang': 'python',
         'environment': os.environ.get('ENVIRONMENT'),
-        'namespace': os.environ.get('NAMESPACE'),
-        'This application has been created by': 'Sahib Gasimov'
+        'namespace': os.environ.get('NAMESPACE')
     })
 
 

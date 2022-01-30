@@ -4,10 +4,10 @@ This Application has been deployed from Jenkins global library https://jenkins.s
 ### Application endpoints for My cluster
 You should have exact same copy of these endpoints which means ENV.your-domain.com and application should respond
 Every application on each env scheduled on 3 Pod for Highly Availability.
-1. https://hello.sgasimov.com/ PROD 
-2. https://stage.hello.sgasimov.com/ STAGE
-3. https://qa.hello.sgasimov.com/ QA 
-4. https://dev.hello.sgasimov.com/ DEV 
+1. https://hello-world.sgasimov.com/ PROD 
+2. https://stage.hello-world.sgasimov.com/ STAGE
+3. https://qa.hello-world.sgasimov.com/ QA 
+4. https://dev.hello-world.sgasimov.com/ DEV 
 
 ### How to run the hello-world with docker compose?
 This documentation describes how to run the hello-world using [docker compose](https://docs.docker.com/compose/gettingstarted/). 

@@ -1,25 +1,14 @@
 # Welcome to Hello world documentation
-#fuchicorp/work-sessions/hello-world 
-To deploy this application make sure you have followed the steps from the [Jenkins global library](https://github.com/fuchicorp/jenkins-global-library). Please make sure you have a job to build and deploy so it will be auto-triggered. If you will check the structure of the repo you will find two files `JenkinsBuilder.groovy` and `JenkinsDeployer.groovy` for build and deploy  
+#
+This Application has been deployed from Jenkins global library https://jenkins.sgasimov.com. Please make sure you have a job to build and deploy so it will be auto-triggered. If you will check the structure of the repo you will find two files `JenkinsBuilder.groovy` and `JenkinsDeployer.groovy` for build and deploy  
 
-
-## Application endpoints for FuchiCorp cluster
+## Application endpoints for My cluster
 You should have exact same copy of these endpoints which means ENV.your-domain.com and application should respond
+Every application on each env scheduled on 3 Pod for Highly Availability.
 1. https://hello.sgasimov.com/ PROD 
 2. https://stage.hello.sgasimov.com/ STAGE
 3. https://qa.hello.sgasimov.com/ QA 
 4. https://dev.hello.sgasimov.com/ DEV 
-
-
-## How can I check my hello world?
-If you will navigate to [hello-world](https://hello-world.fuchicorp.com/) application and find your name. You should be able see hello world endpoints and all common tools endpoints. Please make sure all environments are up and running for hello world
-
-
-## What is hello world?
-A "Hello, World!" program generally is a computer program that outputs or displays the message "Hello, World!". Such a program is very simple in most programming languages and is often used to illustrate the basic syntax of a programming language. It is often the first program written by people learning
-
-
----
 
 # How to run the hello-world with docker compose?
 This documentation describes how to run the hello-world using [docker compose](https://docs.docker.com/compose/gettingstarted/). 
@@ -31,7 +20,7 @@ This documentation describes how to run the hello-world using [docker compose](h
 
 First you will need to clone the repo 
 ```
-git clone git@github.com:fuchicorp/hello-world.git
+git clone https://github.com/sgasimov-dotcom/hello-world-application.git
 ```
 
 

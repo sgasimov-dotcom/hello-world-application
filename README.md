@@ -15,7 +15,7 @@
 This documentation describes how to run the hello-world using docker build. 
 
 ### Before you begin
-Make sure you have docker is installed
+Make sure you have Docker, Python3, Flask Library and AWS boto installed
 
 
 First you will need to clone the repo 

@@ -5,10 +5,10 @@ To deploy this application make sure you have followed the steps from the [Jenki
 
 ## Application endpoints for FuchiCorp cluster
 You should have exact same copy of these endpoints which means ENV.your-domain.com and application should respond
-1. https://hello.fuchicorp.com/ PROD 
-2. https://stage.hello.fuchicorp.com/ STAGE
-3. https://qa.hello.fuchicorp.com/ QA 
-4. https://dev.hello.fuchicorp.com/ DEV 
+1. https://hello.sgasimov.com/ PROD 
+2. https://stage.hello.sgasimov.com/ STAGE
+3. https://qa.hello.sgasimov.com/ QA 
+4. https://dev.hello.sgasimov.com/ DEV 
 
 
 ## How can I check my hello world?

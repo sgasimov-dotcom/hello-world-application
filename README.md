@@ -29,7 +29,7 @@ Kubernetes --> Helm Chart --> Terraform --> Jenkins
 - https://qa.hello-world.sgasimov.com/ QA 
 - https://dev.hello-world.sgasimov.com/ DEV 
 
-4. Terraform will triger Helm to build our application.
+4. Terraform module used for this app, will triger Helm to build our application.
 5. Each env will use separate terraform backend for separate state file. For that purpose we are using set-env.sh script to automatically set up environmental variables for our state backends.  
 
 Jenkins will build and push the code to different environments following the exact structure we have in the repo 

@@ -2,7 +2,12 @@
 
 ## Application Build Process
 
-- Created Helm Chart 
+- Helm Chart for hello-world app has been created and  configuration values inside values.yml were configured for: 
+	- enable ingress, annotations  for cert-manager etc. 
+	- change host to your domain name
+	- add your Docker image
+    - changed app Ports etc.
+
 - Created Dockerfile for Python Hello-World app.py application
 - Build process is automated with Jenkins --> Sonarqube --> Nexus  - it will build Dockerfile in Jenkins, send image to https://sonarqube.sgasimov.com  for static code analysis , if image is safe it will locate the image into my repository in Nexus  https://nexus.sgasimov.com
 
@@ -15,7 +20,7 @@ Kubernetes --> Helm Chart --> Terraform --> Jenkins
 
     ![image](https://user-images.githubusercontent.com/84157053/151738846-4a4eb3af-1ae3-4d12-aafd-049c07f7da69.png)
   
-4. Hello-World application is running on DEV, QA, STAGE AND PROD env, 3 pods each for Highly Availability.
+3. Hello-World application is running on DEV, QA, STAGE AND PROD env, 3 pods each for Highly Availability.
 
     ![image](https://user-images.githubusercontent.com/84157053/151690117-6fa8438b-0363-47af-8f08-d339d25714db.png)
 
@@ -24,6 +29,10 @@ Kubernetes --> Helm Chart --> Terraform --> Jenkins
 - https://qa.hello-world.sgasimov.com/ QA 
 - https://dev.hello-world.sgasimov.com/ DEV 
 
+4. Terraform will triger Helm to build our application.
+5. Each env will use separate terraform backend for separate state file. For that purpose we are using set-env.sh script to automatically set up environmental variables for our state backends.  
+
+Jenkins will build and push the code to different environments following the exact structure we have in the repo 
 
 ### How to test the hello-world with docker ?
 This documentation describes how to run the hello-world using docker build. 
